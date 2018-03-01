@@ -7,7 +7,7 @@ echo -e "####################\nYour IP address is: \n# $IP\n####################
 
 sudo apt-get update
 
-sudo apt-get install socat jq curl avahi-daemon apt-transport-https ca-certificates software-properties-common
+sudo apt-get install -y socat jq curl avahi-daemon apt-transport-https ca-certificates software-properties-common
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
@@ -20,9 +20,7 @@ sudo add-apt-repository \
 
 sudo apt-get update
 
-sudo apt-get install docker-ce
-
-sudo apt-cache madison docker-ce
+sudo apt-get install -y docker-ce
 
 curl -sL https://raw.githubusercontent.com/home-assistant/hassio-build/master/install/hassio_install | bash -
 
