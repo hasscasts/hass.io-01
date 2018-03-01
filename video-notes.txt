@@ -1,0 +1,51 @@
+Step 1: Download latest Ubuntu Server version
+
+https://www.ubuntu.com/download/server
+version 17.10 comes in at ~750Mb
+
+Step 2: Look for Virtualbox
+If not installed then download the latest version from 
+
+Step 3: Create new virtual machine
+Name: Hass.io
+Type: Linux
+Version: Ubuntu (64-bit)
+Leave memory at 1024Mb
+Create a virtual hard drive now
+Leave VDI selected
+Leave Dynamically Allocated
+Name Hass.io and make it 10Gb
+
+Step 4: Settings
+Go into the setting window
+Storage tab: Controller IDE -> empty -> attributes -> disc -> browse to the ubuntu download
+Network: Change NAT to Bridge and make sure that the normal network connection is selected in name
+
+Step 5: Start the VM
+
+Step 6:
+* Select disk language
+* Select Install Ubuntu Server
+* Select installation language
+* Select country
+* Set up keyboard
+* Enter a hostname (hass.io)
+* Full name
+* username (ha)
+* password (ha)
+* Encrypt home?
+* Confirm Timezone
+* Partitioning - Use entire hard drive
+* Proxy ?
+* Automatic security updates
+* Write Grub to MBR
+* Boot into system
+
+Step 7: get IP address
+    hostname -I
+Step 8:
+*  
+
+* Update the system
+* Install dependencies
+* 
