@@ -2,6 +2,7 @@
 
 # Get the IP address
 IP=$(hostname -I)
+export $IP
 
 echo -e "####################\nYour IP address is: \n# $IP\n####################"
 
@@ -23,8 +24,6 @@ sudo apt-get update
 sudo apt-get install -y docker-ce
 
 curl -sL https://raw.githubusercontent.com/home-assistant/hassio-build/master/install/hassio_install | bash -
-
-sudo docker run hello-world
 
 echo -e "\nYour new docker containers are:\n$(docker ps)\n"
 
