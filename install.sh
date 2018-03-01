@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Get the IP address
-IP=$(hostname -I)
-export $IP
+export IP=$(hostname -I)
 
 echo -e "####################\nYour IP address is: \n# $IP\n####################"
 
@@ -27,4 +26,4 @@ curl -sL https://raw.githubusercontent.com/home-assistant/hassio-build/master/in
 
 echo -e "\nYour new docker containers are:\n$(docker ps)\n"
 
-echo -e "\nSuccess! go to\n\nhttp://$(IP):8123\n\n"
+echo -e "\nSuccess! go to\n\nhttp://$IP:8123\n"
