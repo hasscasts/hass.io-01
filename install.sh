@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Get the IP address
-export IP="$(echo -e hostname -I | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
+export IP="$(hostname -I | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
 
 echo -e "####################\nYour IP address is: \n# $IP\n####################"
 
