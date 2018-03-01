@@ -3,7 +3,7 @@
 # Get the IP address
 IP=$(hostname -I)
 
-echo "####################\nYour IP address is: \n# $IP\n####################"
+echo -e "####################\nYour IP address is: \n# $IP\n####################"
 
 sudo apt-get update
 
@@ -28,6 +28,6 @@ curl -sL https://raw.githubusercontent.com/home-assistant/hassio-build/master/in
 
 sudo docker run hello-world
 
-echo "\nYour new docker containers are:\n$(docker ps)\n"
+echo -e "\nYour new docker containers are:\n$(docker ps)\n"
 
-echo "\nSuccess! go to\n\nhttp://$(IP):8123\n\n"
+echo -e "\nSuccess! go to\n\nhttp://$(IP):8123\n\n"
