@@ -22,6 +22,6 @@ sudo apt-get update
 
 sudo apt-get install -y docker-ce
 
-curl -sL https://raw.githubusercontent.com/home-assistant/hassio-build/master/install/hassio_install | sudo bash -
+curl -sL https://raw.githubusercontent.com/home-assistant/supervised-installer/master/installer.sh | sudo bash -
 
 echo -e "\nSuccess! go to\n\nhttp://$IP:8123\n"
